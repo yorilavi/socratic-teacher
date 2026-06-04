@@ -1,2 +1,11 @@
+# Install backups created by install.sh / install.ps1
+*.bak.*
+
 # macOS
 .DS_Store
+
+# Editor metadata
+.vscode/
+.idea/
+*.swp
+*~
