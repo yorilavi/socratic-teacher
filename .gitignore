@@ -9,3 +9,6 @@
 .idea/
 *.swp
 *~
+
+# Archived source material (original prompt drafts)
+archive/
