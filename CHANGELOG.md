@@ -7,7 +7,8 @@ Dates are absolute (YYYY-MM-DD).
 
 ## Unreleased
 
-_Nothing yet._
+### Fixed
+- `prompt-evolution-20260515-132231.md`: added a bridging note explaining the Stage 1 → Stage 4 jump (Stages 2–3 were folded into the consolidated V3), so the log reads continuously.
 
 ## 1.0.0 — 2026-06-03
 

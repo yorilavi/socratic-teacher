@@ -12,6 +12,10 @@ i want to understand graph RAG. i've written multiple RAG systems, usually using
 
 ---
 
+> **Stages 2–3 omitted:** Stage 2 was Claude's first optimization pass (V2); Stage 3 was GPT's review (V2.5). Both were folded into the consolidated V3 below — see "Changes from V2 (Claude's optimized) and GPT's V2.5" for exactly what carried over.
+
+---
+
 ## Stage 4: Claude Critique + V3 (consolidated)
 _Timestamp: $(date '+%Y-%m-%d %H:%M:%S')_
 
