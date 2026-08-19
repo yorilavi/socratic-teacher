@@ -127,6 +127,10 @@ cd ~/.claude/skills/socratic-teacher && git pull
 
 Subscribe to releases at the [repo page](https://github.com/yorilavi/socratic-teacher) for change notifications. See [CHANGELOG.md](./CHANGELOG.md) for the version history.
 
+## License
+
+[MIT](./LICENSE). Attribution appreciated but not required.
+
 ## Author
 
 **Yori Lavi** · current version: **v1.0.0**

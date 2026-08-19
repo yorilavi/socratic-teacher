@@ -7,6 +7,9 @@ Dates are absolute (YYYY-MM-DD).
 
 ## Unreleased
 
+### Added
+- **`LICENSE`** — MIT. The repo was public with no license, which meant all rights reserved: nobody had the legal right to copy `SKILL.md` into their own `~/.claude/skills/`, which is the one thing the README tells them to do.
+
 ### Fixed
 - `prompt-evolution-20260515-132231.md`: added a bridging note explaining the Stage 1 → Stage 4 jump (Stages 2–3 were folded into the consolidated V3), so the log reads continuously.
 
