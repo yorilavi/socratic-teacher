@@ -14,7 +14,7 @@ A skill for Claude Code that teaches a domain through rigorous Socratic dialogue
 
 Three paths. Pick whichever matches how you got here.
 
-> **What lands where.** A `git clone` brings the full repo — `SKILL.md`, `CHANGELOG.md`, **and** the Graph RAG example instances (`graph-rag-socratic-v5.md`, `graph-rag-socratic-v6.md`, `prompt-evolution-*.md`). The local-copy mode of `install.sh` copies only the runtime files (`SKILL.md` + `CHANGELOG.md`), which is all the skill needs to run. If you want the worked examples too, use `git clone`.
+> **What lands where.** A `git clone` brings the full repo — `SKILL.md`, `CHANGELOG.md`, **and** the Graph RAG example instances (`graph-rag-socratic-v5.md`, `graph-rag-socratic-v6.md`, `prompt-evolution-*.md`). The local-copy mode of `install.sh` copies only the runtime files (`SKILL.md`, `CHANGELOG.md`, `LICENSE`), which is all the skill needs to run. If you want the worked examples too, use `git clone`.
 
 ### 1. `git clone` — the most transparent path
 
@@ -46,7 +46,7 @@ How the script decides what to do:
 
 | Situation | What runs |
 |---|---|
-| Script sits next to a `SKILL.md` (you unzipped the archive) | **Local copy** — copies `SKILL.md` + `CHANGELOG.md` to the target. |
+| Script sits next to a `SKILL.md` (you unzipped the archive) | **Local copy** — copies `SKILL.md`, `CHANGELOG.md`, and `LICENSE` to the target. |
 | `~/.claude/skills/socratic-teacher/.git` exists with the right remote | **Update** — runs `git pull --ff-only` in place. |
 | Neither of the above (forwarded script, `curl | sh`, fresh machine) | **Clone** — `git clone --depth 1` from GitHub into the target. |
 | `~/.claude/skills/socratic-teacher/.git` exists but the remote is something else | **Refuses.** Won't touch a checkout it doesn't recognize. Move it aside and re-run. |

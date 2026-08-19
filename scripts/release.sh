@@ -79,6 +79,14 @@ if ! grep -qE "^## (Unreleased|${NEW_VERSION}([[:space:]]|$))" CHANGELOG.md; the
   exit 1
 fi
 
+for required in SKILL.md README.md INSTALL.md CHANGELOG.md; do
+  if [ ! -f "$required" ]; then
+    echo "ERROR: ${required} is missing — release.sh rewrites version anchors in it." >&2
+    echo "       Refusing to start so the bump can't abort half-applied." >&2
+    exit 1
+  fi
+done
+
 CURRENT="$(awk '/^[[:space:]]+version:/ {print $2; exit}' SKILL.md)"
 if [ -z "$CURRENT" ]; then
   echo "ERROR: could not find current version in SKILL.md" >&2

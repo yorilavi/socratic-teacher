@@ -58,7 +58,12 @@ mode_local_copy() {
   backup_existing
   mkdir -p "${TARGET}"
   cp "${SCRIPT_DIR}/SKILL.md" "${TARGET}/"
-  [ -f "${SCRIPT_DIR}/CHANGELOG.md" ] && cp "${SCRIPT_DIR}/CHANGELOG.md" "${TARGET}/"
+  if [ -f "${SCRIPT_DIR}/CHANGELOG.md" ]; then
+    cp "${SCRIPT_DIR}/CHANGELOG.md" "${TARGET}/"
+  fi
+  if [ -f "${SCRIPT_DIR}/LICENSE" ]; then
+    cp "${SCRIPT_DIR}/LICENSE" "${TARGET}/"
+  fi
 }
 
 mode_update() {

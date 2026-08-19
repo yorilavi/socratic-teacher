@@ -11,6 +11,9 @@ Dates are absolute (YYYY-MM-DD).
 - **`LICENSE`** — MIT. The repo was public with no license, which meant all rights reserved: nobody had the legal right to copy `SKILL.md` into their own `~/.claude/skills/`, which is the one thing the README tells them to do.
 
 ### Fixed
+- `install.sh`: `mode_local_copy` ended on a bare `[ -f CHANGELOG.md ] && cp …`. Under `set -eu` that made the function return 1 when `CHANGELOG.md` was absent, so the script exited before printing verification or next steps — the install had actually succeeded, but reported as a silent failure with exit 1. Now a full `if`/`fi`.
+- `scripts/release.sh`: it rewrote version anchors in `README.md` and `INSTALL.md` unconditionally, so a missing file aborted the run *after* `SKILL.md` had already been modified, leaving the tree half-bumped. Added a preflight that checks all four version-aware files before any edit is applied.
+- `install.sh` / `install.ps1`: also copy `LICENSE` into the target in local-copy mode, so a zip install carries the license with it.
 - `prompt-evolution-20260515-132231.md`: added a bridging note explaining the Stage 1 → Stage 4 jump (Stages 2–3 were folded into the consolidated V3), so the log reads continuously.
 
 ## 1.0.0 — 2026-06-03

@@ -63,6 +63,11 @@ function Mode-LocalCopy {
     if (Test-Path $Changelog) {
         Copy-Item -Path $Changelog -Destination $Target
     }
+
+    $License = Join-Path $ScriptDir "LICENSE"
+    if (Test-Path $License) {
+        Copy-Item -Path $License -Destination $Target
+    }
 }
 
 function Mode-Update {
