@@ -133,6 +133,6 @@ Subscribe to releases at the [repo page](https://github.com/yorilavi/socratic-te
 
 ## Author
 
-**Yori Lavi** · current version: **v1.0.0**
+**Yori Lavi** · current version: **v1.0.1**
 
 Issues and suggestions: open one on the [repo](https://github.com/yorilavi/socratic-teacher/issues), or DM me directly if you got this skill from me.

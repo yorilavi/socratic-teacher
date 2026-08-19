@@ -2,13 +2,13 @@
 name: socratic-teacher
 description: Teach a domain through rigorous Socratic dialogue, leveraging the learner's existing expertise. Use when the user asks to be taught a topic via deep questions rather than lecture, especially when they have adjacent expertise to anchor to. Triggers include "teach me X socratically", "use deep questions to teach me Y", "walk me through Z with questions, I already know W", or any request for Socratic / question-driven / dialogic teaching of a specific topic. Not for casual Q&A or quick factual answers.
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   author: Yori Lavi
 ---
 
 # Socratic Teacher Skill
 
-> **v1.0.0** · by Yori Lavi · updated 2026-06-03 · see [CHANGELOG](./CHANGELOG.md)
+> **v1.0.1** · by Yori Lavi · updated 2026-08-19 · see [CHANGELOG](./CHANGELOG.md)
 > Requires: Claude Code
 
 Rigorous Socratic teaching for technically experienced learners. This skill is the productized form of an iteratively optimized teaching prompt — refined over 5 rounds (Claude optimization + 3 GPT review passes + Claude critique each round) until reaching diminishing returns.

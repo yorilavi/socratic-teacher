@@ -5,7 +5,7 @@ Versioning follows [Semantic Versioning](https://semver.org/):
 **MAJOR** = breaking change to the teaching framework · **MINOR** = new capability · **PATCH** = fix or clarification.
 Dates are absolute (YYYY-MM-DD).
 
-## Unreleased
+## 1.0.1 — 2026-08-19
 
 ### Added
 - **`LICENSE`** — MIT. The repo was public with no license, which meant all rights reserved: nobody had the legal right to copy `SKILL.md` into their own `~/.claude/skills/`, which is the one thing the README tells them to do.

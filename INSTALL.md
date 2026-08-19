@@ -80,7 +80,7 @@ Use this path if you've been sent a zip and want to copy the files into place by
 You need an unzipped copy of the skill on disk before any of the commands below will work.
 
 - **Official zip:** grab "Source code (zip)" from the [latest release page](https://github.com/yorilavi/socratic-teacher/releases/latest).
-  Direct link to the current release archive: <https://github.com/yorilavi/socratic-teacher/archive/refs/tags/v1.0.0.zip>
+  Direct link to the current release archive: <https://github.com/yorilavi/socratic-teacher/archive/refs/tags/v1.0.1.zip>
 - **From a friend:** use whichever zip they sent.
 
 Unzip it. GitHub's release archive extracts to a folder named `socratic-teacher-1.0.0/` (with the version suffix). A friend's zip might extract to `socratic-teacher/`. **The folder you place under `~/.claude/skills/` must be named exactly `socratic-teacher/`** — rename or `cp` accordingly. The commands below assume that.
